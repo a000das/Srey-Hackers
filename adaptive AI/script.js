@@ -57,8 +57,6 @@ async function generateResponse() {
         loading.style.display = "none";
     }
 }
-
-// Event listeners
 input.addEventListener("change", () => {
     const file = input.files[0];
     if (!file) return;
