@@ -68,8 +68,7 @@ input.addEventListener("change", () => {
         innerUploadImage.querySelector("span").style.display = "none";
         innerUploadImage.querySelector("#icon").style.display = "none";
         image.style.display = "block";
-        image.src = data.$;{fileDetails.mime_type};base64,$
-        {fileDetails.data};
+        image.src = `data:${fileDetails.mime_type};base64,${fileDetails.data}`;
         output.style.display = "none";
     };
     reader.readAsDataURL(file);
