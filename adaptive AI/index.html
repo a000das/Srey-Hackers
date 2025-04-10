@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lanf="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width=device-width,initial scale=1.0">
-        <title>
-            ADAPTIVE AI TUTOR
-        </title>
-        <link rel="stylesheet" href ="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAPTIVE AI TUTOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <h1>
-            Hi ! I am your AI tutor.
-        </h1>
-        <div class="upload image">
-            <div class="inner-upload-image">
+<body>
+    <h1>Hi! I am your AI tutor.</h1>
+
+    <div class="upload-image">
+        <div class="inner-upload-image">
             <input type="file" hidden>
-            <img src=""alt=""id="image">
-            <img src="plus.svg" alt=""id="icon">
-            <span>
-                UPLOAD IMAGE
-            </span>
-            </div>
-            <button>
-                ANSWER
-            </button>
+            <img src="" alt="" id="image" style="display: none;">
+            <img src="plus.svg" alt="" id="icon">
+            <span>UPLOAD IMAGE</span>
         </div>
-       <img src="/adaptive AI/loading.gif" alt=""id="loading" width="80px">
-       <div class="output">
-        <pre id="text">
-        </pre>
-       </div> 
-       <script src="script.js">
-       </script>
-    </body>
+        <select id="mode-select">
+            <option value="quiz">Generate Quiz</option>
+            <option value="solution">Solve Problem</option>
+        </select>
+        <button>ANSWER</button>
+    </div>
+
+    <img src="/adaptive AI/loading.gif" alt="" id="loading" width="80px" style="display: none;">
+
+    <div class="output" style="display: none;">
+        <div id="text"></div>
+        <button id="copy-btn">Copy</button>
+        <button id="download-btn">Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
